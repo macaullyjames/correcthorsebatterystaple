@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<title>sensiblepass</title>
+		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 	</head>
 	<body>
@@ -14,6 +16,49 @@
 				<button class="regenerate">
 					Make a new one <i class="fa fa-refresh"></i>
 				</button>
+			</div>
+		</section>
+		<section class="stats">
+			<div class="text-box">
+				<h1>Your password stats</h1>
+		
+				<h2>Overview</h2>
+				<table>
+					<tr>
+						<td>Cleartext</td>
+						<td>correcthorsebatterystaple</td>
+					</tr>
+					<tr>
+						<td>Hard to guess</td>
+						<td>Very <span class="explanation">(keep reading for numbers)</span></td>
+					</tr>
+					<tr>
+						<td>Easy to remember</td>
+						<td>You've already memorized it</td>
+					</tr>
+				</table>
+			
+				<h2>Password strength</h2>
+				<table>
+					<tr>
+						<td>Keyspace</td>
+						<td>
+							2^44 = 17 592 186 044 416
+							<span class="explanation">(4 words randomly picked from a list of 2048 words)</span>
+						</td>
+					</tr>
+					<tr>
+						<td>Average number of attempts to crack</td>
+						<td>2^43 = 8 796 093 022 208</td>
+					</tr>
+					<tr>
+						<td>Average time to crack on a poorly managed webservice</td>
+						<td>
+							~279 years
+							<span class="explanation">(allowing for 1000 guesses per second during the entire time)</span>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</section>
 	</body>

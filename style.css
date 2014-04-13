@@ -8,15 +8,23 @@
 }
 
 body {
-	margin: 0;
+	margin: 0 0 30em 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	color: #474545;
 }
 
-section.generator {
-	height: 650px;
+section {
 	width: 100%;
 	max-width: 1300px;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+/* generator */
+
+section.generator {
+	height: 650px;
 	background: url('assets/img/skyline.jpg');
 	background-size: 1800px auto;
 }
@@ -73,4 +81,55 @@ section.generator > .actions .regenerate:hover {
 
 section.generator > .actions .regenerate i {
 	color: #5FBA88;
+}
+
+
+/* Stats */
+
+section.stats {
+	
+}
+
+section.stats .text-box {
+	width: 38em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+section.stats h1 {
+	font-size: 5em;
+	font-family: "BebasNeueRegular", "sans-serif";
+	font-weight: normal;
+}
+
+section.stats h2 {
+	margin-bottom: 0.2em;
+	font-size: 2.2em;
+	font-family: "BebasNeueRegular", "sans-serif";
+	font-weight: normal;
+}
+
+section.stats .explanation {
+	color: #D4D4D4;
+}
+
+section.stats table {
+	margin: 0 auto;
+}
+
+section.stats table td {
+	width: 19em;
+	padding: 0.3em 0.6em;
+	vertical-align: top;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+section.stats table td:first-child {
+	text-align: right;
+}
+
+section.stats table td:last-child {
+	border-left: 1px solid #D4D4D4;
+	text-align: left;
 }
