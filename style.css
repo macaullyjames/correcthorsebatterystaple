@@ -8,7 +8,7 @@
 }
 
 body {
-	margin: 0 0 30em 0;
+	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.1em;
 	color: #474545;
@@ -18,10 +18,13 @@ section {
 	width: 100%;
 	max-width: 1300px;
 	margin: 0 auto;
+	padding-bottom: 5em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	overflow: hidden;
 }
 
-/* generator */
+/* Generator */
 
 section.generator {
 	height: 650px;
@@ -114,7 +117,7 @@ section.stats .explanation {
 }
 
 section.stats table {
-	margin: 0 auto;
+	margin: 0 auto 2em auto;
 }
 
 section.stats table td {
@@ -132,4 +135,14 @@ section.stats table td:first-child {
 section.stats table td:last-child {
 	border-left: 1px solid #D4D4D4;
 	text-align: left;
+}
+
+/* Credits */
+
+section.credits p {
+	text-align: justify;
+}
+
+section.credits p a {
+	color: #5FBA88;
 }
