@@ -1,19 +1,25 @@
 <!doctype html>
 <html>
 	<head>
-		<title>sensiblepass</title>
+		<title>correcthorsebatterystaple</title>
 		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controllers.js"></script>
+		<script src="services.js"></script>
+		
 	</head>
-	<body>
+	<body ng-app="CHBS" ng-controller="passwordController">
 		<section class="generator">
 			<div class="password">
-				<span>correct</span><span>horse</span><span>battery</span><span>staple</span>
+				<span ng-repeat="word in password">{{word}}</span>
 			</div>
 			<div class="actions">				
-				<button class="regenerate">
+				<button class="regenerate" ng-click="refreshPassword()">
 					Make a new one <i class="fa fa-refresh"></i>
 				</button>
 			</div>
@@ -26,7 +32,7 @@
 				<table>
 					<tr>
 						<td>Cleartext</td>
-						<td>correcthorsebatterystaple</td>
+						<td>{{password.join('')}}</td>
 					</tr>
 					<tr>
 						<td>Hard to guess</td>
