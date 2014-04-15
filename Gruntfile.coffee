@@ -13,6 +13,13 @@ module.exports = () ->
                     {cwd: "src/", expand: yes, src: "app.css",     dest: "build/"}
                 ]
 
+        sass:
+            compile:
+                files:
+                    'build/app.css' : 'src/app.scss'
+
+
+
         clean: ["build/"]
 
 
@@ -21,5 +28,6 @@ module.exports = () ->
     @loadNpmTasks "grunt-contrib-copy"
     @loadNpmTasks "grunt-contrib-clean"
     @loadNpmTasks "grunt-contrib-uglify"
+    @loadNpmTasks "grunt-contrib-sass"
 
-    @registerTask "default", ["clean", "copy", "coffee"]
+    @registerTask "default", ["clean", "copy", "coffee", "sass"]
