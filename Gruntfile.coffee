@@ -8,15 +8,19 @@ module.exports = () ->
             main:
                 files: [
                     {cwd: ".",    expand: yes, src: "assets/**",   dest: "build/"}
-                    {cwd: "src/", expand: yes, src: "partials/**", dest: "build/"}
-                    {cwd: "src/", expand: yes, src: "index.html",  dest: "build/"}
-                    {cwd: "src/", expand: yes, src: "app.css",     dest: "build/"}
                 ]
 
         sass:
             compile:
                 files:
                     'build/app.css' : 'src/app.scss'
+
+        jade:
+            compile:
+                options:
+                    pretty: yes
+                files:
+                    "build/index.html" : "src/app.jade"
 
 
 
@@ -27,7 +31,7 @@ module.exports = () ->
     @loadNpmTasks "grunt-contrib-coffee"
     @loadNpmTasks "grunt-contrib-copy"
     @loadNpmTasks "grunt-contrib-clean"
-    @loadNpmTasks "grunt-contrib-uglify"
     @loadNpmTasks "grunt-contrib-sass"
+    @loadNpmTasks "grunt-contrib-jade"
 
-    @registerTask "default", ["clean", "copy", "coffee", "sass"]
+    @registerTask "default", ["clean", "copy", "coffee", "sass", "jade"]
