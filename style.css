@@ -24,6 +24,12 @@ section {
 	overflow: hidden;
 }
 
+section .text-box {
+    width: 38em;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Generator */
 
 section.generator {
@@ -90,13 +96,7 @@ section.generator > .actions .regenerate i {
 /* Stats */
 
 section.stats {
-	
-}
 
-section.stats .text-box {
-	width: 38em;
-	margin: 0 auto;
-	text-align: center;
 }
 
 section.stats h1 {
