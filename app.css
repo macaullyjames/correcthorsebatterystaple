@@ -57,6 +57,14 @@ section.generator > .actions .regenerate:hover {
   background-color: #4F4F4F; }
 
 section.generator > .actions .regenerate i {
+  background-color: #4F4F4F;
+  -webkit-animation: spin 10s infinite linear;
+  -moz-animation: spin 10s infinite linear;
+  -o-animation: spin 10s infinite linear;
+  animation: spin 10s infinite linear; }
+
+section.generator > .actions .regenerate i {
+  margin-left: 0.5em;
   color: #5FBA88; }
 
 /* Stats */
