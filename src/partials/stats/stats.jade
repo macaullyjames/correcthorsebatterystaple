@@ -1,0 +1,35 @@
+section.stats
+    .text-box
+        h1 Your password stats
+
+        h2 Overview
+        table
+            tr
+                td Cleartext
+                td {{password.join('')}}
+            tr
+                td Hard to guess
+                td
+                    | Very
+                    span.explanation (keep reading for numbers)
+            tr
+                td Easy to remember
+                td You've already memorized it
+
+        h2 Password strength
+        table
+            tr
+                td Keyspace
+                td
+                    | 2^44 = 17 592 186 044 416 
+                    span.explanation (4 words randomly picked from a list of 2048 words)
+            tr
+                td Average number of attempts to crack
+                td 2^43 = 8 796 093 022 208
+            tr
+                td Average time to crack on a poorly managed webservice
+                td
+                    | ~279 years
+                    span.explanation (allowing for 1000 guesses per second during the entire time)
+
+        p Congratulations on a great choice of password! :)

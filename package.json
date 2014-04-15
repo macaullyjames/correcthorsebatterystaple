@@ -1,0 +1,14 @@
+{
+  "name": "sensiblepass",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-coffee": "^0.10.1",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-jade": "^0.11.0",
+    "marked": "^0.3.2"
+  }
+}
