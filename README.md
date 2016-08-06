@@ -3,7 +3,7 @@ This is a page that generates secure, easy to remember passwords. That's it. If
 you like it, either fork it or send me a pull request! :)
 
 ## Show me the goods!
-Go [here](http://macaullyjamesmuir.github.io/correcthorsebatterystaple/)
+Go [here](http://macaullyjames.github.io/correcthorsebatterystaple/)
 
 ## How do I build it?
     npm install
